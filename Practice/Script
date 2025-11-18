@@ -1,0 +1,85 @@
+# Q1
+
+# list = [1,2,3,4,5]
+
+# for i in list:
+#     print(i*i)
+
+# Q2 Python code print string in uppercase and also it's length
+# text = 'hello world'
+
+# print(text.upper(),len(text),sep="\n")
+
+# Q3 if age 18 or above print adult, minor otherwise
+
+# age = 17
+
+# if age>=18:
+#     print('adult')
+# else:
+#     print('minor')
+
+# Q4 Write a function named greet that:
+
+# Takes a person's name as input
+
+# Returns "Hello, <name>"
+
+# def greet(name):
+#     return f"Hello, {name}"
+
+# print(greet("Aman"))
+
+# Q5 Is even function
+
+# def is_even(num):
+#     if num%2==0:
+#         return True
+#     else:
+#         return False
+    
+# print(is_even(4))
+
+# Q6 square of number using list comprehension
+
+# num = [1,2,3,4,5]
+
+# without list comprehension
+# sq = []
+# for i in num:
+#     sq.append(i*i)
+
+# # with list comprehension
+# squares = [x*x for x in num]
+# print(squares)
+
+# convert strings to upper case
+# words = ["apple", "banana", "kiwi"]
+
+# upper_case = [i.upper() for i in words]
+# print(upper_case)
+
+# get even numbers
+# nums = [1,2,3,4,5]
+# even = [i for i in nums if i%2 ==  0]
+# print(even)
+
+# add 10 to each number
+# num = [1,2,3]
+# new = [i + 10 for i in num]
+# print(new)
+
+#Q7 creating dictionay which stores name as key and length as value
+# name = ['Aman','Riya','Karan']
+
+# dict = {}
+
+# for i in name:
+#     dict[i] = len(i)
+# print(dict)
+
+# with dict comprehension
+
+# dict = {i:len(i) for i in name}
+# print(dict)
+#d
