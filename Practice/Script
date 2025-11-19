@@ -70,7 +70,7 @@
 # print(new)
 
 #Q7 creating dictionay which stores name as key and length as value
-# name = ['Aman','Riya','Karan']
+name = ['Aman','Riya','Karan']
 
 # dict = {}
 
@@ -82,4 +82,73 @@
 
 # dict = {i:len(i) for i in name}
 # print(dict)
-#d
+
+# Q8 create a list only containing numbers that are divisible by 10 with and without list comprehension
+    
+nums = [10,15,20,25,30]
+# new = []
+
+# for i in nums:
+#     if i%10==0:
+#         new.append(i)
+# print(new)
+
+# n = [i for i in nums if i%10==0]
+# print(n)
+
+# Q9 create a list of tuple with name and age
+# names = ["Aman", "Riya", "Karan"]
+# ages = [23, 21, 25]
+# new = []
+
+# for i in range(len(names)):
+#     new.append((names[i],ages[i]))
+# print(new)
+
+# new = list(zip(names,ages))
+# print(new)
+# new = []
+
+# for i, j in zip(names,ages):
+#     new.append((i,j))
+# print(new)
+
+# count vowels
+# name = 'Abhishek Sahu'
+
+
+# def vowel_count(text):
+#     no = 0
+#     for i in text:
+#         if i.upper() in('A','E','I','O','U'):
+#           no = no + 1
+#     print(no)
+
+# vowel_count(name)
+
+# Q11 count words in sentence, output should be 5
+
+# s = "I am learning Python programming"
+
+# def count_words(text):
+#     print(len(text.split()))
+
+# def count_words2(textnew):
+#     count = 0
+#     for i in textnew.split():
+#         count+=1
+#     print(count)
+
+# count_words2(s)
+
+# Q12 Find max number in a list
+# nums = [10, 5, 20, 3, 50, 2]
+
+# def max_number(s):
+#     max_num = nums[0]
+#     for i in nums:
+#         if i>max_num:
+#             max_num = i
+#     print(max_num)
+
+# max_number(nums)
