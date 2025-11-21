@@ -163,13 +163,58 @@
 
 # # Q14 Sorting the list without using sort() or sorted()
 
-nums = [10, 5, 20, 3, 50, 2]
-for i in range(len(nums)):                # Outer loop → number of passes
-    for j in range(len(nums) - 1 - i):    # Inner loop → compare adjacent elements
-        if nums[j] > nums[j + 1]:
-            nums[j], nums[j + 1] = nums[j + 1], nums[j]
+# num = [10, 5, 20, 3, 50, 2]
+# for i in range(len(nums)):                # Outer loop → number of passes
+#     for j in range(len(nums) - 1 - i):    # Inner loop → compare adjacent elements
+#         if nums[j] > nums[j + 1]:
+#             nums[j], nums[j + 1] = nums[j + 1], nums[j]
 
-print(nums)
+# print(nums)
 
+# for i in range(len(num)):
+#     for j in range(len(num)-1):
+#         if num[j]>num[j+1]:
+#             num[j],num[j+1] = num[j+1],num[j]
 
+# print(num)
 
+# Write a function that returns the largest number in a list (without using max()).
+# nums = [10, 50, 2, 99, 34]
+# num_max = nums[0]
+# for i in nums:
+#     if i>num_max:
+#         num_max = i
+# print(num_max)
+
+# Count how many times each word appears in a sentence
+# text = "python is easy and python is powerful"
+# freq = {}
+
+# for i in text.split():
+#     if i in freq:
+#         freq[i] = freq[i] + 1
+#     else:
+#         freq[i] = 1
+# print(freq)
+
+# Reverse a string without using reverse() or [::-1]
+# s = 'hello'
+# new = ""
+
+# for i in s:
+#     new = i + new
+# print(new)
+
+# Print all prime numbers from 1 to 50
+# num = []
+
+# for i in range(2,51):
+#     is_prime = True
+#     for j in range(2,i):
+#         if i%j ==0:
+#             is_prime = False 
+#             break 
+#     else:
+#         num.append(i)
+
+# print(num)
