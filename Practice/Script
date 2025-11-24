@@ -218,3 +218,134 @@
 #         num.append(i)
 
 # print(num)
+# prime_list = []
+# for i in range(2,51):
+#     is_prime = True
+#     for j in range(2,i):
+#         if i%j == 0:
+#             is_prime = False
+#             break 
+#     else:
+#         prime_list.append(i)
+
+# print(prime_list)
+
+# for i in range(10):
+#     if i == 5:
+#         break
+#     print(i)
+
+# for i in range(4):
+#     if i == 2:
+#         continue 
+#     print(i)
+
+# for i in range(4):
+#     if i == 2:
+#         pass 
+#     print(i)
+
+# lst = [1,2,3]
+# lst[1] = 20
+# print(lst)
+
+# squares = []
+# for i in range(5):
+#     squares.append(i*i)
+# print(squares)   
+
+# squares = [i*i for i in range(5)]
+# print(squares)
+# input = [4, 2, 4, 5, 2, 1]
+# result = []
+# for i in input:
+#     if i not in result:
+#         result.append(i)
+# print(result)
+# Count how many times each character appears in a string (no dictionary allowed)
+# text = "banana"
+# lst = []
+# cnt = []
+
+# for i in text:
+#     if i not in lst:
+#         lst.append(i)
+#         cnt.append(1)
+#     else:
+#         idx = lst.index(i)
+#         cnt[idx]+=1
+
+# for j in range(len(lst)):
+#     print(lst[j]," > ",cnt[j])
+
+# with dict
+# dict = {}
+
+# for i in text:
+#     if i in dict:
+#         dict[i]+=1
+#     else:
+#         dict[i] = 1
+
+# print(dict)
+
+# nums = [12, 5, 7, 10, 22, 9, 3]
+# sum = 0
+# n = len(nums)
+
+# for i in nums:
+#     sum = sum + i
+# print(round(sum/n,2))
+
+# count even numbers
+# cnt = 0
+# for i in nums:
+#     if i%2 == 0:
+#         cnt = cnt + 1
+# print(cnt)
+
+# # Print all even numbers
+# lst = []
+
+# for i in nums:
+#     if i%2 == 0:
+#         lst.append(i)
+# print(lst)
+
+# # sum of even numbers
+# sum = 0
+# for i in nums:
+#     if i%2 == 0:
+#         sum = sum + i
+# print(sum)
+
+# finding median
+
+# nums.sort()
+# n = len(nums)
+
+# if n%2 != 0:
+#     median = nums[n//2]
+# else:
+#     median = (nums[n//2] + nums[n//2 - 1])/2
+# print('median ', median)
+
+# second larget number
+# largest = nums[0]
+# second_largest = -999999
+
+# for i in nums:
+#     if i > largest:
+#         second_largest = largest
+#         largest = i
+#     elif i > second_largest and i != largest:
+#         second_largest = i
+
+# print(largest,second_largest)'
+
+# text = 'abc'
+# text_new = ''
+
+# for i in text:
+#     text_new = i + text_new
+# print(text_new)
