@@ -349,3 +349,37 @@
 # for i in text:
 #     text_new = i + text_new
 # print(text_new)
+
+# text = 'abc'
+# text_new = ''
+
+# for i in range(len(text)-1,-1,-1):
+#     text_new = text_new + text[i]
+# print(text_new)
+
+# frequency count
+
+text = "banana"
+# count = {}
+
+# for i in text:
+#     if i not in count:
+#         count[i] = 1
+#     else:
+#         count[i] = count[i] + 1
+# print(count)
+
+# without dictionary
+
+# text_new = []
+# count = []
+
+# for i in text:
+#     if i not in text_new:
+#         text_new.append(i)
+#         count.append(1)
+#     else:
+#         idx = text_new.index(i)
+#         count[idx] = count[idx] + 1
+# for j in range(len(text_new)):
+#     print(text_new[j],count[j])
