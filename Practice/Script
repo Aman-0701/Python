@@ -383,3 +383,78 @@ text = "banana"
 #         count[idx] = count[idx] + 1
 # for j in range(len(text_new)):
 #     print(text_new[j],count[j])
+
+# count frequencies
+# first method
+text = 'banana'
+# freq = {}
+
+# for i in text:
+#     if i not in freq:
+#         freq[i] = 1
+#     else:
+#         freq[i]+=1
+# print(freq)
+
+# second method
+# text_new = []
+# count = []
+
+# for i in text:
+#     if i not in text_new:
+#         text_new.append(i)
+#         count.append(1)
+#     else:
+#         idx = text_new.index(i)
+#         count[idx]+=1
+# print(text_new,count)
+
+# Find second largest number
+# a = [1,4,6,7,9,8]
+# max_no = a[0]  # assumed
+# second_no = -99999  # assumed
+
+# for i in a:
+#     if i>max_no:
+#         second_no = max_no
+#         max_no = i
+#     elif second_no < i and second_no != max_no:
+#         second_no = i
+# print(second_no)
+
+# Detect duplicates
+
+# First method using set
+
+lst = [1, 2, 3, 2, 4, 1]
+# dup = []
+
+# seen = set()
+
+# for i in lst:
+#     if i in seen:
+#         dup.append(i)
+#     else:
+#         seen.add(i)
+
+# print(dup)
+
+# second method using counter
+# from collections import Counter
+
+# counts = Counter(lst)
+# l = []
+
+# for i,j in counts.items():
+#     if j > 1:
+#         l.append(i)
+# print(l)
+
+# Third method
+# seen = set()
+# new = []
+# for i in lst:
+#     if i in seen:
+#         new.append(i)
+#     else:
+#         seen.add(i)
