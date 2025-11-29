@@ -1,516 +1,552 @@
-# # Q1
+# # # Q1
 
-# # list = [1,2,3,4,5]
+# # # list = [1,2,3,4,5]
 
-# # for i in list:
-# #     print(i*i)
+# # # for i in list:
+# # #     print(i*i)
 
-# # Q2 Python code print string in uppercase and also it's length
-# # text = 'hello world'
+# # # Q2 Python code print string in uppercase and also it's length
+# # # text = 'hello world'
 
-# # print(text.upper(),len(text),sep="\n")
+# # # print(text.upper(),len(text),sep="\n")
 
-# # Q3 if age 18 or above print adult, minor otherwise
+# # # Q3 if age 18 or above print adult, minor otherwise
 
-# # age = 17
+# # # age = 17
 
-# # if age>=18:
-# #     print('adult')
-# # else:
-# #     print('minor')
+# # # if age>=18:
+# # #     print('adult')
+# # # else:
+# # #     print('minor')
 
-# # Q4 Write a function named greet that:
+# # # Q4 Write a function named greet that:
 
-# # Takes a person's name as input
+# # # Takes a person's name as input
 
-# # Returns "Hello, <name>"
+# # # Returns "Hello, <name>"
 
-# # def greet(name):
-# #     return f"Hello, {name}"
+# # # def greet(name):
+# # #     return f"Hello, {name}"
 
-# # print(greet("Aman"))
+# # # print(greet("Aman"))
 
-# # Q5 Is even function
+# # # Q5 Is even function
 
-# # def is_even(num):
-# #     if num%2==0:
-# #         return True
-# #     else:
-# #         return False
+# # # def is_even(num):
+# # #     if num%2==0:
+# # #         return True
+# # #     else:
+# # #         return False
     
-# # print(is_even(4))
+# # # print(is_even(4))
 
-# # Q6 square of number using list comprehension
+# # # Q6 square of number using list comprehension
 
-# # num = [1,2,3,4,5]
+# # # num = [1,2,3,4,5]
 
-# # without list comprehension
-# # sq = []
-# # for i in num:
-# #     sq.append(i*i)
+# # # without list comprehension
+# # # sq = []
+# # # for i in num:
+# # #     sq.append(i*i)
 
-# # # with list comprehension
-# # squares = [x*x for x in num]
-# # print(squares)
+# # # # with list comprehension
+# # # squares = [x*x for x in num]
+# # # print(squares)
 
-# # convert strings to upper case
-# # words = ["apple", "banana", "kiwi"]
+# # # convert strings to upper case
+# # # words = ["apple", "banana", "kiwi"]
 
-# # upper_case = [i.upper() for i in words]
-# # print(upper_case)
+# # # upper_case = [i.upper() for i in words]
+# # # print(upper_case)
 
-# # get even numbers
-# # nums = [1,2,3,4,5]
-# # even = [i for i in nums if i%2 ==  0]
-# # print(even)
+# # # get even numbers
+# # # nums = [1,2,3,4,5]
+# # # even = [i for i in nums if i%2 ==  0]
+# # # print(even)
 
-# # add 10 to each number
-# # num = [1,2,3]
-# # new = [i + 10 for i in num]
+# # # add 10 to each number
+# # # num = [1,2,3]
+# # # new = [i + 10 for i in num]
+# # # print(new)
+
+# # #Q7 creating dictionay which stores name as key and length as value
+# # # name = ['Aman','Riya','Karan']
+
+# # # dict = {}
+
+# # # for i in name:
+# # #     dict[i] = len(i)
+# # # print(dict)
+
+# # # with dict comprehension
+
+# # # dict = {i:len(i) for i in name}
+# # # print(dict)
+
+# # # Q8 create a list only containing numbers that are divisible by 10 with and without list comprehension
+    
+# # # nums = [10,15,20,25,30]
+# # # new = []
+
+# # # for i in nums:
+# # #     if i%10==0:
+# # #         new.append(i)
+# # # print(new)
+
+# # # n = [i for i in nums if i%10==0]
+# # # print(n)
+
+# # # Q9 create a list of tuple with name and age
+# # # names = ["Aman", "Riya", "Karan"]
+# # # ages = [23, 21, 25]
+# # # new = []
+
+# # # for i in range(len(names)):
+# # #     new.append((names[i],ages[i]))
+# # # print(new)
+
+# # # new = list(zip(names,ages))
+# # # print(new)
+# # # new = []
+
+# # # for i, j in zip(names,ages):
+# # #     new.append((i,j))
+# # # print(new)
+
+# # # count vowels
+# # # name = 'Abhishek Sahu'
+
+
+# # # def vowel_count(text):
+# # #     no = 0
+# # #     for i in text:
+# # #         if i.upper() in('A','E','I','O','U'):
+# # #           no = no + 1
+# # #     print(no)
+
+# # # vowel_count(name)
+
+# # # Q11 count words in sentence, output should be 5
+
+# # # s = "I am learning Python programming"
+
+# # # def count_words(text):
+# # #     print(len(text.split()))
+
+# # # def count_words2(textnew):
+# # #     count = 0
+# # #     for i in textnew.split():
+# # #         count+=1
+# # #     print(count)
+
+# # # count_words2(s)
+
+# # # Q12 Find max number in a list
+# # # nums = [10, 5, 20, 3, 50, 2]
+
+# # # def max_number(s):
+# # #     max_num = nums[0]
+# # #     for i in nums:
+# # #         if i>max_num:
+# # #             max_num = i
+# # #     print(max_num)
+
+# # # max_number(nums)
+# # # Q13 Find min number
+# # # nums = [10, 5, 20, 3, 50, 2]
+# # # min_num = nums[0]
+
+# # # for i in nums:
+# # #  if i<min_num:
+# # #   min_num = i
+# # # print(i)
+
+# # # Q14 Sorting the list without using sort() or sorted()
+
+# # num = [10, 5, 20, 3, 50, 2]
+# # for i in range(len(nums)):                # Outer loop → number of passes
+# #     for j in range(len(nums) - 1 - i):    # Inner loop → compare adjacent elements
+# #         if nums[j] > nums[j + 1]:
+# #             nums[j], nums[j + 1] = nums[j + 1], nums[j]
+
+# # print(nums)
+
+# # for i in range(len(num)):
+# #     for j in range(len(num)-1):
+# #         if num[j]>num[j+1]:
+# #             num[j],num[j+1] = num[j+1],num[j]
+
+# # print(num)
+
+# # Write a function that returns the largest number in a list (without using max()).
+# # nums = [10, 50, 2, 99, 34]
+# # num_max = nums[0]
+# # for i in nums:
+# #     if i>num_max:
+# #         num_max = i
+# # print(num_max)
+
+# # Count how many times each word appears in a sentence
+# # text = "python is easy and python is powerful"
+# # freq = {}
+
+# # for i in text.split():
+# #     if i in freq:
+# #         freq[i] = freq[i] + 1
+# #     else:
+# #         freq[i] = 1
+# # print(freq)
+
+# # Reverse a string without using reverse() or [::-1]
+# # s = 'hello'
+# # new = ""
+
+# # for i in s:
+# #     new = i + new
 # # print(new)
 
-# #Q7 creating dictionay which stores name as key and length as value
-# # name = ['Aman','Riya','Karan']
+# # Print all prime numbers from 1 to 50
+# # num = []
 
+# # for i in range(2,51):
+# #     is_prime = True
+# #     for j in range(2,i):
+# #         if i%j ==0:
+# #             is_prime = False 
+# #             break 
+# #     else:
+# #         num.append(i)
+
+# # print(num)
+# # prime_list = []
+# # for i in range(2,51):
+# #     is_prime = True
+# #     for j in range(2,i):
+# #         if i%j == 0:
+# #             is_prime = False
+# #             break 
+# #     else:
+# #         prime_list.append(i)
+
+# # print(prime_list)
+
+# # for i in range(10):
+# #     if i == 5:
+# #         break
+# #     print(i)
+
+# # for i in range(4):
+# #     if i == 2:
+# #         continue 
+# #     print(i)
+
+# # for i in range(4):
+# #     if i == 2:
+# #         pass 
+# #     print(i)
+
+# # lst = [1,2,3]
+# # lst[1] = 20
+# # print(lst)
+
+# # squares = []
+# # for i in range(5):
+# #     squares.append(i*i)
+# # print(squares)   
+
+# # squares = [i*i for i in range(5)]
+# # print(squares)
+# # input = [4, 2, 4, 5, 2, 1]
+# # result = []
+# # for i in input:
+# #     if i not in result:
+# #         result.append(i)
+# # print(result)
+# # Count how many times each character appears in a string (no dictionary allowed)
+# # text = "banana"
+# # lst = []
+# # cnt = []
+
+# # for i in text:
+# #     if i not in lst:
+# #         lst.append(i)
+# #         cnt.append(1)
+# #     else:
+# #         idx = lst.index(i)
+# #         cnt[idx]+=1
+
+# # for j in range(len(lst)):
+# #     print(lst[j]," > ",cnt[j])
+
+# # with dict
 # # dict = {}
 
-# # for i in name:
-# #     dict[i] = len(i)
+# # for i in text:
+# #     if i in dict:
+# #         dict[i]+=1
+# #     else:
+# #         dict[i] = 1
+
 # # print(dict)
 
-# # with dict comprehension
-
-# # dict = {i:len(i) for i in name}
-# # print(dict)
-
-# # Q8 create a list only containing numbers that are divisible by 10 with and without list comprehension
-    
-# # nums = [10,15,20,25,30]
-# # new = []
+# # nums = [12, 5, 7, 10, 22, 9, 3]
+# # sum = 0
+# # n = len(nums)
 
 # # for i in nums:
-# #     if i%10==0:
-# #         new.append(i)
-# # print(new)
+# #     sum = sum + i
+# # print(round(sum/n,2))
 
-# # n = [i for i in nums if i%10==0]
-# # print(n)
+# # count even numbers
+# # cnt = 0
+# # for i in nums:
+# #     if i%2 == 0:
+# #         cnt = cnt + 1
+# # print(cnt)
 
-# # Q9 create a list of tuple with name and age
-# # names = ["Aman", "Riya", "Karan"]
-# # ages = [23, 21, 25]
-# # new = []
-
-# # for i in range(len(names)):
-# #     new.append((names[i],ages[i]))
-# # print(new)
-
-# # new = list(zip(names,ages))
-# # print(new)
-# # new = []
-
-# # for i, j in zip(names,ages):
-# #     new.append((i,j))
-# # print(new)
-
-# # count vowels
-# # name = 'Abhishek Sahu'
-
-
-# # def vowel_count(text):
-# #     no = 0
-# #     for i in text:
-# #         if i.upper() in('A','E','I','O','U'):
-# #           no = no + 1
-# #     print(no)
-
-# # vowel_count(name)
-
-# # Q11 count words in sentence, output should be 5
-
-# # s = "I am learning Python programming"
-
-# # def count_words(text):
-# #     print(len(text.split()))
-
-# # def count_words2(textnew):
-# #     count = 0
-# #     for i in textnew.split():
-# #         count+=1
-# #     print(count)
-
-# # count_words2(s)
-
-# # Q12 Find max number in a list
-# # nums = [10, 5, 20, 3, 50, 2]
-
-# # def max_number(s):
-# #     max_num = nums[0]
-# #     for i in nums:
-# #         if i>max_num:
-# #             max_num = i
-# #     print(max_num)
-
-# # max_number(nums)
-# # Q13 Find min number
-# # nums = [10, 5, 20, 3, 50, 2]
-# # min_num = nums[0]
+# # # Print all even numbers
+# # lst = []
 
 # # for i in nums:
-# #  if i<min_num:
-# #   min_num = i
-# # print(i)
+# #     if i%2 == 0:
+# #         lst.append(i)
+# # print(lst)
 
-# # Q14 Sorting the list without using sort() or sorted()
+# # # sum of even numbers
+# # sum = 0
+# # for i in nums:
+# #     if i%2 == 0:
+# #         sum = sum + i
+# # print(sum)
 
-# num = [10, 5, 20, 3, 50, 2]
-# for i in range(len(nums)):                # Outer loop → number of passes
-#     for j in range(len(nums) - 1 - i):    # Inner loop → compare adjacent elements
-#         if nums[j] > nums[j + 1]:
-#             nums[j], nums[j + 1] = nums[j + 1], nums[j]
+# # finding median
 
-# print(nums)
+# # nums.sort()
+# # n = len(nums)
 
-# for i in range(len(num)):
-#     for j in range(len(num)-1):
-#         if num[j]>num[j+1]:
-#             num[j],num[j+1] = num[j+1],num[j]
+# # if n%2 != 0:
+# #     median = nums[n//2]
+# # else:
+# #     median = (nums[n//2] + nums[n//2 - 1])/2
+# # print('median ', median)
 
-# print(num)
+# # second larget number
+# # largest = nums[0]
+# # second_largest = -999999
 
-# Write a function that returns the largest number in a list (without using max()).
-# nums = [10, 50, 2, 99, 34]
-# num_max = nums[0]
-# for i in nums:
-#     if i>num_max:
-#         num_max = i
-# print(num_max)
+# # for i in nums:
+# #     if i > largest:
+# #         second_largest = largest
+# #         largest = i
+# #     elif i > second_largest and i != largest:
+# #         second_largest = i
 
-# Count how many times each word appears in a sentence
-# text = "python is easy and python is powerful"
-# freq = {}
+# # print(largest,second_largest)'
 
-# for i in text.split():
-#     if i in freq:
-#         freq[i] = freq[i] + 1
-#     else:
-#         freq[i] = 1
-# print(freq)
+# # text = 'abc'
+# # text_new = ''
 
-# Reverse a string without using reverse() or [::-1]
-# s = 'hello'
-# new = ""
+# # for i in text:
+# #     text_new = i + text_new
+# # print(text_new)
 
-# for i in s:
-#     new = i + new
-# print(new)
+# # text = 'abc'
+# # text_new = ''
 
-# Print all prime numbers from 1 to 50
-# num = []
+# # for i in range(len(text)-1,-1,-1):
+# #     text_new = text_new + text[i]
+# # print(text_new)
 
-# for i in range(2,51):
-#     is_prime = True
-#     for j in range(2,i):
-#         if i%j ==0:
-#             is_prime = False 
-#             break 
-#     else:
-#         num.append(i)
+# # frequency count
 
-# print(num)
-# prime_list = []
-# for i in range(2,51):
-#     is_prime = True
-#     for j in range(2,i):
-#         if i%j == 0:
-#             is_prime = False
-#             break 
-#     else:
-#         prime_list.append(i)
-
-# print(prime_list)
-
-# for i in range(10):
-#     if i == 5:
-#         break
-#     print(i)
-
-# for i in range(4):
-#     if i == 2:
-#         continue 
-#     print(i)
-
-# for i in range(4):
-#     if i == 2:
-#         pass 
-#     print(i)
-
-# lst = [1,2,3]
-# lst[1] = 20
-# print(lst)
-
-# squares = []
-# for i in range(5):
-#     squares.append(i*i)
-# print(squares)   
-
-# squares = [i*i for i in range(5)]
-# print(squares)
-# input = [4, 2, 4, 5, 2, 1]
-# result = []
-# for i in input:
-#     if i not in result:
-#         result.append(i)
-# print(result)
-# Count how many times each character appears in a string (no dictionary allowed)
 # text = "banana"
-# lst = []
-# cnt = []
+# # count = {}
 
-# for i in text:
-#     if i not in lst:
-#         lst.append(i)
-#         cnt.append(1)
-#     else:
-#         idx = lst.index(i)
-#         cnt[idx]+=1
+# # for i in text:
+# #     if i not in count:
+# #         count[i] = 1
+# #     else:
+# #         count[i] = count[i] + 1
+# # print(count)
 
-# for j in range(len(lst)):
-#     print(lst[j]," > ",cnt[j])
+# # without dictionary
 
-# with dict
-# dict = {}
+# # text_new = []
+# # count = []
 
-# for i in text:
-#     if i in dict:
-#         dict[i]+=1
-#     else:
-#         dict[i] = 1
+# # for i in text:
+# #     if i not in text_new:
+# #         text_new.append(i)
+# #         count.append(1)
+# #     else:
+# #         idx = text_new.index(i)
+# #         count[idx] = count[idx] + 1
+# # for j in range(len(text_new)):
+# #     print(text_new[j],count[j])
 
-# print(dict)
+# # count frequencies
+# # first method
+# text = 'banana'
+# # freq = {}
 
-# nums = [12, 5, 7, 10, 22, 9, 3]
-# sum = 0
-# n = len(nums)
+# # for i in text:
+# #     if i not in freq:
+# #         freq[i] = 1
+# #     else:
+# #         freq[i]+=1
+# # print(freq)
 
-# for i in nums:
-#     sum = sum + i
-# print(round(sum/n,2))
+# # second method
+# # text_new = []
+# # count = []
 
-# count even numbers
-# cnt = 0
-# for i in nums:
-#     if i%2 == 0:
-#         cnt = cnt + 1
-# print(cnt)
+# # for i in text:
+# #     if i not in text_new:
+# #         text_new.append(i)
+# #         count.append(1)
+# #     else:
+# #         idx = text_new.index(i)
+# #         count[idx]+=1
+# # print(text_new,count)
 
-# # Print all even numbers
-# lst = []
+# # Find second largest number
+# # a = [1,4,6,7,9,8]
+# # max_no = a[0]  # assumed
+# # second_no = -99999  # assumed
 
-# for i in nums:
-#     if i%2 == 0:
-#         lst.append(i)
-# print(lst)
+# # for i in a:
+# #     if i>max_no:
+# #         second_no = max_no
+# #         max_no = i
+# #     elif second_no < i and second_no != max_no:
+# #         second_no = i
+# # print(second_no)
 
-# # sum of even numbers
-# sum = 0
-# for i in nums:
-#     if i%2 == 0:
-#         sum = sum + i
-# print(sum)
+# # Detect duplicates
 
-# finding median
+# # First method using set
 
-# nums.sort()
-# n = len(nums)
+# lst = [1, 2, 3, 2, 4, 1]
+# # dup = []
 
-# if n%2 != 0:
-#     median = nums[n//2]
+# # seen = set()
+
+# # for i in lst:
+# #     if i in seen:
+# #         dup.append(i)
+# #     else:
+# #         seen.add(i)
+
+# # print(dup)
+
+# # second method using counter
+# # from collections import Counter
+
+# # counts = Counter(lst)
+# # l = []
+
+# # for i,j in counts.items():
+# #     if j > 1:
+# #         l.append(i)
+# # print(l)
+
+# # Third method
+# # seen = set()
+# # new = []
+# # for i in lst:
+# #     if i in seen:
+# #         new.append(i)
+# #     else:
+# #         seen.add(i)
+
+# # print prime numbers from 1 to 20
+# # lst = []
+# # for i in range(2,21):
+# #     is_prime = True
+# #     for j in range(2,i):
+# #         if i%j == 0:
+# #             is_prime = False 
+# #             break 
+# #     if is_prime:
+# #         lst.append(i)
+# # print(lst)
+
+# # print all the even no. from 1 to 20
+# # lst = []
+# # for i in range(1,21):
+# #     if i%2 ==0:
+# #         lst.append(i)
+# # print(lst)
+
+# # print sum of numbers from 1 to 100
+# # no = 0
+
+# # for i in range(1,101):
+# #     no = no + i
+# # print(no)
+
+# # Count how many no between 1-300 are divisible by 7
+# # cnt = 0
+# # for i in range(1,301):
+# #     if i%7 == 0:
+# #         cnt+=1
+# # print(cnt)
+
+# # # Given a list count duplicates
+
+# # lst = [1,2,2,3,3]
+# # lst_n = []
+# # cnt = []
+
+# # for i in lst:
+# #     if i not in lst_n:
+# #         lst_n.append(i)
+# #         cnt.append(1)
+# #     else:
+# #         idx = lst_n.index(i)
+# #         cnt[idx]+=1
+# # print(lst_n,cnt)
+
+# # print factorial of a number:
+
+# # a = 4
+# # b = 1
+# # for i in range(1,a+1):
+# #     b = b*i
+# # print(b)
+
+# # Given a number in list, spearate numbers in two lists evens and odss
+# # lst = [1,2,3,4,5,6,7,8]
+# # lst_even = []
+# # lst_odd = []
+
+# # for i in lst:
+# #     if i%2 ==0:
+# #         lst_even.append(i)
+# #     else:
+# #         lst_odd.append(i)
+# # print(lst_even,lst_odd)
+
+# # Rotate a list by one position
+# # ex [1,2,3,4] should become [4,1,2,3]
+
+# l = [1,2,3,4]
+# last = l[-1]
+# lst_neww = [last]
+
+# for i in range(len(l)-1):
+#     lst_neww.append(l[i])
+
+# print(lst_neww)
+# l_new = [l[-1]] + l[:-1]
+# print(l_new)
+
+# check if a list is palindrome or not
+# A palindrome is something that reads the same forward and backward
+# lst = [1,2,2,1]
+
+# if lst == lst[::-1]:
+#     print("Yes, palindrome")
 # else:
-#     median = (nums[n//2] + nums[n//2 - 1])/2
-# print('median ', median)
+#     print('No')
 
-# second larget number
-# largest = nums[0]
-# second_largest = -999999
-
-# for i in nums:
-#     if i > largest:
-#         second_largest = largest
-#         largest = i
-#     elif i > second_largest and i != largest:
-#         second_largest = i
-
-# print(largest,second_largest)'
-
-# text = 'abc'
-# text_new = ''
-
-# for i in text:
-#     text_new = i + text_new
-# print(text_new)
-
-# text = 'abc'
-# text_new = ''
-
-# for i in range(len(text)-1,-1,-1):
-#     text_new = text_new + text[i]
-# print(text_new)
-
-# frequency count
-
-text = "banana"
-# count = {}
-
-# for i in text:
-#     if i not in count:
-#         count[i] = 1
-#     else:
-#         count[i] = count[i] + 1
-# print(count)
-
-# without dictionary
-
-# text_new = []
-# count = []
-
-# for i in text:
-#     if i not in text_new:
-#         text_new.append(i)
-#         count.append(1)
-#     else:
-#         idx = text_new.index(i)
-#         count[idx] = count[idx] + 1
-# for j in range(len(text_new)):
-#     print(text_new[j],count[j])
-
-# count frequencies
-# first method
-text = 'banana'
-# freq = {}
-
-# for i in text:
-#     if i not in freq:
-#         freq[i] = 1
-#     else:
-#         freq[i]+=1
-# print(freq)
-
-# second method
-# text_new = []
-# count = []
-
-# for i in text:
-#     if i not in text_new:
-#         text_new.append(i)
-#         count.append(1)
-#     else:
-#         idx = text_new.index(i)
-#         count[idx]+=1
-# print(text_new,count)
-
-# Find second largest number
-# a = [1,4,6,7,9,8]
-# max_no = a[0]  # assumed
-# second_no = -99999  # assumed
-
-# for i in a:
-#     if i>max_no:
-#         second_no = max_no
-#         max_no = i
-#     elif second_no < i and second_no != max_no:
-#         second_no = i
-# print(second_no)
-
-# Detect duplicates
-
-# First method using set
-
-lst = [1, 2, 3, 2, 4, 1]
-# dup = []
-
-# seen = set()
-
-# for i in lst:
-#     if i in seen:
-#         dup.append(i)
-#     else:
-#         seen.add(i)
-
-# print(dup)
-
-# second method using counter
-# from collections import Counter
-
-# counts = Counter(lst)
-# l = []
-
-# for i,j in counts.items():
-#     if j > 1:
-#         l.append(i)
-# print(l)
-
-# Third method
-# seen = set()
-# new = []
-# for i in lst:
-#     if i in seen:
-#         new.append(i)
-#     else:
-#         seen.add(i)
-
-# print prime numbers from 1 to 20
-# lst = []
-# for i in range(2,21):
-#     is_prime = True
-#     for j in range(2,i):
-#         if i%j == 0:
-#             is_prime = False 
-#             break 
-#     if is_prime:
-#         lst.append(i)
-# print(lst)
-
-# print all the even no. from 1 to 20
-# lst = []
-# for i in range(1,21):
-#     if i%2 ==0:
-#         lst.append(i)
-# print(lst)
-
-# print sum of numbers from 1 to 100
-# no = 0
-
-# for i in range(1,101):
-#     no = no + i
-# print(no)
-
-# Count how many no between 1-300 are divisible by 7
-# cnt = 0
-# for i in range(1,301):
-#     if i%7 == 0:
-#         cnt+=1
-# print(cnt)
-
-# # Given a list count duplicates
-
-# lst = [1,2,2,3,3]
-# lst_n = []
-# cnt = []
-
-# for i in lst:
-#     if i not in lst_n:
-#         lst_n.append(i)
-#         cnt.append(1)
-#     else:
-#         idx = lst_n.index(i)
-#         cnt[idx]+=1
-# print(lst_n,cnt)
-
-# print factorial of a number:
-
-# a = 4
-# b = 1
-# for i in range(1,a+1):
-#     b = b*i
-# print(b)
