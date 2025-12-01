@@ -550,3 +550,44 @@
 # else:
 #     print('No')
 
+# Second method
+# lst = [1,2,3,2,1]
+# n = len(lst)
+# is_palindrome = True
+
+# for i in range(n//2):
+#     if lst[i] != lst[n-1-i]:
+#         is_palindrome = False
+#         break
+# if is_palindrome:
+#     print("Yes,Palindrome")
+
+# Reverse Number
+# n = 1234
+# rev = 0
+
+# while n>0:
+#     digit = n%10
+#     rev = rev*10 + digit 
+#     n = n//10
+# print(rev)
+
+# n = 1234
+# rev = 0
+# l = len(str(n))
+
+# for i in range(l):
+#     digit = n%10
+#     rev = rev*10 + digit 
+#     n = n//10
+
+# print(rev)
+
+# reverse the string
+
+# text = 'abd'
+# new = ''
+
+# for i in text[::-1]:
+#     new = new + i
+# print(new)
