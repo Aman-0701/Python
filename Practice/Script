@@ -682,4 +682,37 @@
 #     if str(i) == str(i)[::-1]:
 #         lst.append(i)
 # print(lst)
-    
+
+# a = 2
+# for i in str(a):
+#     if int(i)%2==0:
+#         print(f'{i} is even number')
+
+# How many digits are greater than 5
+# n = 58627
+# cnt = 0
+# while n>0:
+#     digit = n % 10
+#     if digit >5:
+#         cnt+=1
+#     n = n // 10
+# print(cnt)
+
+# How many digits are prime number 
+# n = 239417
+# cnt = 0
+
+# while n>0:
+#     digit = n % 10
+#     if digit<2:
+#         n = n//10
+#         continue
+#     for i in range(2,digit):
+#         if digit%i==0:
+#             break 
+#     else:
+#         cnt+=1
+#     n = n //10
+# print(f'count is {cnt}')
+
+
